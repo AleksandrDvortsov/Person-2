@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        indent {
+            word-spacing: 20px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css.css" media="all">
+</head>
+<body>
+
+<div class="marginEntryField">
+    <indent>
+        <b> Логин: </b>
+            <input type="text" class="entryField" id="login" placeholder="Имя пользователя" value="admin">
+        <b> Пароль: </b>
+        <input type="password" class="entryField" id="passw" placeholder="Пароль" value="0">
+        <button class="readButton" onclick="read()" >Войти</button>
+
+        <p>  <!--/// My Secrets-->
+            <input readonly type="text" class="textArea" id="mySecrets" placeholder="Here is your secret ...">
+        </p>
+
+    </indent>
+
+</div>
+
+<script>
+    var isAdmin = 'login';
+</script>
+<script src = "js.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <style>
+        table, th, td {
+            border: 1px solid snow;
+            padding: 15px;
+            border-spacing: 15px;
+            color: snow;
+            font-size: 25px;
+        }
+        indent {
+            word-spacing: 20px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css.css" media="all">
+</head>
+<body>
+<div class="marginEntryField">
+    <!--/// Login-->
+    <p>
+        <indent>
+            <button class="readButton" onclick="read()" >Read</button>
+        </indent>
+    </p>
+</div>
+<div class="textAreaMargin">
+    <indent>
+        <p>
+            <input type="text" class="textArea" id="mySecretsUpdata" placeholder="Here will be your updated secret ...">
+        </p>
+    </indent>
+</div>
+<div class="marginTable" style="width:100%">
+    <table id="myTable">
+        <col width="30">
+        <col width="250">
+        <col width="250">
+        <col width="500">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Password</th>
+            <th>Secrets</th>
+            <th>UpData</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+</div>
+<script>
+    var isAdmin = 'admin';
+</script>
+<script src = "js.js"></script>
+</body>
+</html>

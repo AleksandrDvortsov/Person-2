@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test BD MySQL</title>
+    <!--<link rel="stylesheet" type="text/css" href="css.css" media="all">-->
+    <style>
+        indent {
+            word-spacing: 20px;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="css.css" media="all">
+
+</head>
+
+<body>
+<div class="marginEntryField">
+    <!--/// Login-->
+    <p>
+        <indent>
+            <button class="readButton" onclick="read()" >Read</button>
+            <button class="readButton" onclick="updata()" >UpData</button>
+            <button class="readButton" onclick="dellSecrets()">Delete</button>
+        </indent>
+    </p>
+</div>
+
+<div class="textAreaMargin">
+    <indent>
+        <p>  <!--/// My Secrets-->
+            <input readonly type="text" class="textArea" id="mySecrets" placeholder="Here is your secret ...">
+        </p>
+        <p>
+            <input type="text" class="textArea" id="mySecretsUpdata" placeholder="Here will be your updated secret ...">
+        </p>
+
+    </indent>
+</div>
+<css>
+
+</css>
+<script>
+    var isAdmin = 'users';
+</script>
+<script src = "js.js"></script>
+</body>
+
+</html>
